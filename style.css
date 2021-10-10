@@ -1,8 +1,10 @@
+/* root styling */
 * {
     background-color: lightgray;
     margin: auto;
 }
 
+/* styles header */
 .header h1 {
     margin: auto;
     padding: 25px;
@@ -19,6 +21,7 @@
     border: solid black 1px;
 }
 
+/* styles start button/high scores button */
 .start-button,#high-scores {
     display: flex;
     flex-direction: row;
@@ -35,6 +38,7 @@
     justify-content: center;
 }
 
+/* styles possible answer buttons for questions */
 #a,#b,#c,#d {
     display: none;
     flex-direction: row;
@@ -51,11 +55,13 @@
     justify-content: center;
 }
 
+/* button hover styling */
 #a:hover,#b:hover,#c:hover,#d:hover,.start-button:hover,#high-scores:hover {
     color: white;
     background-color: purple;
 }
 
+/* styling timer box */
 .timer {
     display: none;
     flex-direction: row;
@@ -72,6 +78,7 @@
     justify-content: center;
 }
 
+/* styling text */
 p{
     color: black;
     text-shadow: .5px .5px white;
@@ -81,6 +88,7 @@ p{
 
 }
 
+/* sets high score container and game-over to display none at startup */
 .high-score-container {
     display: none;
 }
@@ -90,6 +98,7 @@ p{
     display: none;
 }
 
+/* styling for final score box */
 .final-score {
     padding: 25px;
     border: solid 2px black;
@@ -99,6 +108,7 @@ p{
     font-weight: bold;
 }
 
+/* styling for initials */
 #initials {
     padding: 25px;
     border: solid 2px black;
@@ -108,11 +118,13 @@ p{
     font-weight: bold;
 }
 
+/* more button hover styling */
 #initials:hover,.submit-score:hover {
     color: white;
     background-color: purple;
 }
 
+/* more button styling */
 .submit-score,.play-again,.clear-high-score {
     flex-direction: row;
     border: 2px black solid;
@@ -128,6 +140,7 @@ p{
     justify-content: center;
 }
 
+/* high score page styling */
 .high-score-page {
     display: flex;
     flex-direction: row;
@@ -149,6 +162,7 @@ p{
     text-decoration: underline;
 }
 
+/* more button hover styling */
 .play-again:hover,.clear-high-score:hover {
     color: white;
     background-color: purple;

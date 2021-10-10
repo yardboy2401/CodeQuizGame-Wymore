@@ -28,4 +28,4 @@ The following animation demonstrates the application functionality:
 
 A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
 
-![Alt text](./screenshot.png?raw=true "Title")
+![Code Quiz Screenshot](./Screenshot.png?raw=true "Code Quiz Screenshot")

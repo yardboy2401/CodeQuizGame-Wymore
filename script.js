@@ -1,3 +1,4 @@
+// defining variables from HTML page
 var header = document.querySelector(".header");
 var startButton = document.querySelector(".start-button");
 var highScoreButton = document.querySelector(".high-scores");
@@ -21,7 +22,7 @@ var highScoreContainer = document.querySelector(".high-score-container");
 var bigContainer = document.querySelector(".big-container");
 var initials = document.getElementById("initials");
 
-
+// questions array along with answer choices and correct answers
 var quizQuestions = [ 
     {
         question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
@@ -81,6 +82,7 @@ var quizQuestions = [
     },
 ];
 
+// a few more variables to store initial states
 var timeLeft = 60;
 var currentQuestionIndex = 0;
 var timerInterval;
@@ -88,7 +90,7 @@ var score = 0;
 var finalQuestionIndex = quizQuestions.length
 var correct;
 
-  
+// function to generate quiz question and possible answer buttons  
 function makeQuizQuestion() {
       gameOver.style.display = "none";
       if(currentQuestionIndex === finalQuestionIndex) {
@@ -102,7 +104,7 @@ function makeQuizQuestion() {
       buttonD.innerHTML = currentQuestion.choiceD;
 };
   
-
+// starts initial quiz and parameter setpoints from event listener at end of page to start the game
 function startQuiz() {
     quizSection.style.display = "block";
     timer.style.display = "flex",
@@ -126,7 +128,8 @@ function startQuiz() {
     }, 1000);
 };
 
-  
+
+// function to display the score after start quiz function completes
 function displayScore() {
       quizSection.style.display = "none";
       gameOver.style.display = "flex";
@@ -135,6 +138,7 @@ function displayScore() {
       finalScore.innerHTML = "You picked " + score + " correct out of " + quizQuestions.length + " correct.";
 };
 
+// event listener for submitting high score to page and local storage
 submitScore.addEventListener('click', function highScore() {
     console.log("clicked!")
     if(initials.value === "") {
@@ -159,6 +163,7 @@ submitScore.addEventListener('click', function highScore() {
 });
 
 
+// generates the high scores page 
 function generateHighScores(){
     highScoreInitials.innerHTML = "";
     highScoreScore.innerHTML = "";
@@ -173,6 +178,7 @@ function generateHighScores(){
     }
 }
 
+// creates high score list page
 function showHighScore() {
     header.style.display = "none";
     // gameOver.style.display = "none";
@@ -184,12 +190,14 @@ function showHighScore() {
     generateHighScores()
 }
 
+// clears local storage and high scores on page
 function clearScore() {
     window.localStorage.clear();
     highScoreInitials.textContent = "";
     highScoreScore.textContent = "";
 }
 
+// function to start quiz over
 function replayQuiz() {
       timeLeft = 60;
       score = 0;
@@ -199,6 +207,7 @@ function replayQuiz() {
       header.style.display = "block";
 }
 
+// check answers function
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
 
@@ -217,4 +226,5 @@ function checkAnswer(answer){
     }
 };
 
+// event listener for mouse click to start quiz
 startButton.addEventListener('click', startQuiz);

@@ -8,6 +8,7 @@
 </head>
 <body>
     <main>
+        <!-- Creating big-container to hold header and quiz questions/timer/buttons -->
     <div class = "big-container">
     <header class ="header">
         <h1>Code Quiz Game</h1>
@@ -27,13 +28,13 @@
                 <button id="d" onclick="checkAnswer('d')">D</button>
                 <div class="result"></div>
         </section>
-        
+        <!-- game-over section has final score and submit button -->
         <div class="game-over">
             <div class="final-score"></div>
             <input type = "text" size = "35" placeholder = "Please enter your initials for high score input" name = "initials" id="initials">
             <button class="submit-score">Submit Score</button>
         </div>
-            
+         <!-- high score container has high score page/initials/score/end game buttons -->
         <div class = "high-score-container">
             <div class="high-score-page">
                 <h3>User Initials</h3>
@@ -41,7 +42,7 @@
                 <h3>Score</h3>
                 <div class="high-score-score"></div>
             </div> 
-        
+        <!-- footer contains play-again and clear-high-score buttons -->
             <footer class="end-game-buttons">
                 <button class="play-again" onclick="replayQuiz()">Play Again?</button>
                 <button class="clear-high-score" onclick="clearScore()">Clear High Scores</button>
