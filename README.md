@@ -1,31 +1,36 @@
-# week4-homework-wymore
-04 Web APIs: Code Quiz
-Your Task
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment—perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges.
+# Week 04 Homework Web APIs: Code Quiz
 
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
+## Your Task
+Build a timed Code Quiz game with multiple choice questions. The app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. It should have a clean, polished and responsive user interface. It should also use local storage to store high scores w/ initals. The high score page should populate with local storage data if present. If a question is answered incorrectly, time should be deducted from the countdown timer.
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+## Languages Used
+ - JS
+ - HTML
+ - CSS
 
-User Story
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-Acceptance Criteria
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-Mock-Up
-The following animation demonstrates the application functionality:
+## Link to GitHub main project
+https://yardboy2401.github.io/week4-homework-wymore/
 
-A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
+## Link to Deployed Application
+https://yardboy2401.github.io/week4-homework-wymore/
 
-![Code Quiz Screenshot](./Screenshot.png?raw=true "Code Quiz Screenshot")
+## Screenshots of finished product
+### Initial page load
+![image](https://user-images.githubusercontent.com/85953688/138788962-2201b56d-b7f7-4698-bc5d-bf70016aaefa.png)
+### After clicking start game
+![image](https://user-images.githubusercontent.com/85953688/138789004-10a3424b-6198-46ec-b3b4-9ddf862a0cb8.png)
+### Correct answer
+![image](https://user-images.githubusercontent.com/85953688/138789097-0cc446a1-d5e6-4ab2-9b5a-7d68fd3586ad.png)
+### At completion of quiz
+![image](https://user-images.githubusercontent.com/85953688/138789184-0c6454b8-46ab-464b-a54d-9751690372fd.png)
+### HighScore input page and local storage
+![image](https://user-images.githubusercontent.com/85953688/138789246-f0c8a025-49bc-4eed-9ae6-620b14382146.png)
+
+## Project Notes
+Questions do not present in random order. If I get a chance to work on this project more I would include that feature. Right now they always present in the same order. All other functionality is present to meet the user acceptance requirements for the project.
+
+## Contact Information
+Github: https://github.com/yardboy2401
+
+Email: yardboy2401@gmail.com
+- - - -
