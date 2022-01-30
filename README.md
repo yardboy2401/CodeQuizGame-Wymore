@@ -1,4 +1,4 @@
-# Week 04 Homework Web APIs: Code Quiz
+# Web APIs: Code Quiz-Wymore
 
 ## Your Task
 Build a timed Code Quiz game with multiple choice questions. The app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. It should have a clean, polished and responsive user interface. It should also use local storage to store high scores w/ initals. The high score page should populate with local storage data if present. If a question is answered incorrectly, time should be deducted from the countdown timer.
