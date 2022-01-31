@@ -9,10 +9,10 @@ Build a timed Code Quiz game with multiple choice questions. The app will run in
  - CSS
 
 ## Link to GitHub main project
-https://yardboy2401.github.io/week4-homework-wymore/
+https://github.com/yardboy2401/CodeQuizGame-Wymore
 
 ## Link to Deployed Application
-https://yardboy2401.github.io/week4-homework-wymore/
+https://yardboy2401.github.io/CodeQuizGame-Wymore/
 
 ## Screenshots of finished product
 ### Initial page load
